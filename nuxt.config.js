@@ -35,9 +35,10 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/proxy'
   ],
-  proxy:[
-    ['/json.html',{target:'http://localhost:3333'}]    //注意这也是一个数组
-  ],
+  // proxy:[
+  //   ['/json.html',{target:'http://localhost:3333'}]    //注意这也是一个数组
+  // ],
+  //proxy: { '/user/': { target: 'http://auth.purestart.com.cn', pathRewrite: {'^/user/': '/user/'} } },
 /*  axios: { prefix: '/api/', proxy: true},
   proxy: { '/api/': { target: 'http://localhost:8080', pathRewrite: {'^/api/': ''} } },*/
   /*
